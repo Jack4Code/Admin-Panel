@@ -1,0 +1,19 @@
+{
+    "name": "commandcenter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss scss/main.scss css/main.css"
+    },
+    "author": "Jack Giannini",
+    "license": "MIT",
+    "devDependencies": {
+        "npm-sass": "^2.3.0",
+        "sass": "^1.17.2"
+    },
+    "dependencies": {
+        "material-design-icons": "^3.0.1"
+    }
+}

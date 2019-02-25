@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700");
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0rem;
+  background: #2e2f32; }
+
+body {
+  font-family: 'Open Sans'; }
+
+.side-nav {
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
+  height: 100rem;
+  width: 15%;
+  background-color: #191c20; }
+  .side-nav .nav {
+    position: relative;
+    margin: 0rem;
+    padding: 0rem;
+    top: 5rem;
+    background-color: #191c20; }
+    .side-nav .nav li {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #191c20;
+      border-bottom: 0.15rem solid #0A0A0A;
+      font-size: 2rem;
+      padding: 0.5rem; }
+      .side-nav .nav li a {
+        margin-left: 15%;
+        text-align: left;
+        text-align: center;
+        text-decoration: none;
+        background-color: #191c20;
+        color: white;
+        font-size: 1.7rem;
+        transition: 0.1s; }
+      .side-nav .nav li:hover {
+        background-color: rgba(0, 0, 0, 0.6); }
+        .side-nav .nav li:hover li {
+          background-color: rgba(0, 0, 0, 0.6); }
+        .side-nav .nav li:hover a {
+          margin-left: 18%;
+          background-color: rgba(0, 0, 0, 0.01); }
+
+.top-bar {
+  position: fixed;
+  z-index: 1;
+  height: 4rem;
+  width: 100%;
+  background-color: #000000; }
+  .top-bar .side-nav-part {
+    position: relative;
+    height: 4rem;
+    width: 15%;
+    background-color: #191c20;
+    border-bottom: 0.05rem solid #0A0A0A; }
+    .top-bar .side-nav-part h1 {
+      padding-top: 1rem;
+      font-size: 1.3rem;
+      text-align: center;
+      vertical-align: middle;
+      color: lightgreen;
+      background-color: #191c20; }
+  .top-bar input {
+    position: fixed;
+    top: 0.92rem;
+    left: 20%;
+    height: 2.2rem;
+    width: 50rem;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    background: #191c20;
+    padding-left: 1rem;
+    color: white; }
+  .top-bar .settings {
+    position: fixed;
+    top: 1.5rem;
+    right: 2%;
+    height: 2rem;
+    width: 4%;
+    background-color: #000000; }
+    .top-bar .settings a {
+      text-decoration: none;
+      color: #a1a5a7;
+      background-color: #000000; }
+      .top-bar .settings a:hover {
+        color: #8d9e8d; }
+
+.boxes {
+  position: relative; }
+  .boxes .first-box {
+    position: absolute;
+    top: 5rem;
+    left: 16%;
+    height: 45rem;
+    width: 30%;
+    background-color: #191c20;
+    border-radius: 0.75%; }
+  .boxes .second-box {
+    position: absolute;
+    top: 5rem;
+    left: 47%;
+    height: 22.5rem;
+    width: 50%;
+    background-color: #191c20;
+    border-radius: 0.75%; }
+  .boxes .third-box {
+    position: absolute;
+    top: 28rem;
+    left: 47%;
+    height: 22rem;
+    width: 50%;
+    background-color: #191c20;
+    border-radius: 0.75%; }
+  .boxes .servers {
+    position: absolute; }
