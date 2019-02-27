@@ -11,57 +11,60 @@
 </head>
 
 <body>
-    <div class="side-nav">
-        <ul class="nav">
-            <li>
-                <a href="index.html">
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="calandar.html">
-                    To Do List
-                </a>
-            </li>
-            <li>
-                <a href="calandar.html">
-                    Calendar
-                </a>
-            </li>
-            <li>
-                <a href="banking.html">
-                    Banking
-                </a>
-            </li>
-            <li>
-                <a href="SqlRes.html">
-                    SQL Resources
-                </a>
-            </li>
-            <li>
-                <a href="servers.html">
-                    Servers
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="top-bar">
-        <div class="side-nav-part">
-            <h1>Command Center</h1>
+    <div id="app-outer">
+        <div class="side-nav">
+            <div class="side-nav-part">
+                <h1>Command Center</h1>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="index.html">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="calandar.html">
+                        To Do List
+                    </a>
+                </li>
+                <li>
+                    <a href="calandar.html">
+                        Calendar
+                    </a>
+                </li>
+                <li>
+                    <a href="banking.html">
+                        Banking
+                    </a>
+                </li>
+                <li>
+                    <a href="SqlRes.html">
+                        SQL Resources
+                    </a>
+                </li>
+                <li>
+                    <a href="servers.html">
+                        Servers
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div>
-            <input type="text" placeholder="Search here">
+        <div class="top-bar">
+            <div>
+                <input type="text" placeholder="Search here">
+            </div>
+            <div class="settings">
+                <a href="#">Settings</a>
+            </div>
         </div>
-        <div class="settings">
-            <a href="#">Settings</a>
+        <div class="content-area">
+            <div class="box first-box">
+                <div class="myCal"></div>
+            </div>
+            <div class="box second-box"></div>
+            <div class="box third-box"></div>
         </div>
-    </div>
-    <div class="boxes">
-        <div class="first-box">
-            <div class="myCal"></div>
-        </div>
-        <div class="second-box"></div>
-        <div class="third-box"></div>
+
     </div>
 
     <script src="js/jquery.js"></script>

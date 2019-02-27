@@ -1,66 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
-
 * {
-    font-size: 16px;
     box-sizing: border-box;
-    margin: 0rem;
-    background: #2e2f32;
+    font-family: 'Open Sans';
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 1rem;
+    height: 4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #191c20; //should probably make this color a variable at the top
+    border-radius: 0.5rem;
+}
+
+html {
+    font-size: 16px;
+    background-color: #2e2f32;
 }
 
 body {
-    font-family: 'Open Sans';
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#app-outer {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .side-nav {
     position: absolute;
-    top: 4rem;
+    top: 0rem;
     left: 0rem;
-    height: 100rem;
-    width: 15%;
+    height: 100%;
+    width: 16rem;
     background-color: #191c20;
-    .nav {
-        position: relative;
-        margin: 0rem;
-        padding: 0rem;
-        top: 5rem;
-        background-color: #191c20;
-        li {
-            list-style-type: none;
-            overflow: hidden;
-            background-color: #191c20;
-            border-bottom: 0.15rem solid #0A0A0A;
-            font-size:2rem;
-            padding: 0.5rem;
-            a {
-                margin-left: 15%;
-                text-align: left;
-                text-align: center;
-                text-decoration: none;
-                background-color: #191c20;
-                color:white;
-                font-size:1.7rem;
-                transition: 0.1s;
-            }
-            &:hover{
-                background-color: rgba(0,0,0,0.6);  
-                li {
-                    background-color: rgba(0,0,0,0.6);  
-                }
-                a {
-                    margin-left: 18%;
-                    background-color: rgba(0,0,0,0.01);
-                }
-            }
-        }
-    }
-}
-
-.top-bar {
-    position: fixed;
-    z-index:1;
-    height: 4rem;
-    width: 100%;
-    background-color: #000000;
     .side-nav-part {
         position: relative;
         height: 4rem;
@@ -76,6 +56,48 @@ body {
             background-color: #191c20;
         }
     }
+    .nav {
+        position: relative;
+        margin: 0rem;
+        padding: 0rem;
+        top: 5rem;
+        background-color: #191c20;
+        li {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #191c20;
+            border-bottom: 0.15rem solid #0A0A0A;
+            font-size: 2rem;
+            padding: 0.5rem;
+            a {
+                margin-left: 15%;
+                text-align: left;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-size: 1.7rem;
+                transition: 0.1s;
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.6);
+                li {
+                    background-color: rgba(0, 0, 0, 0.6);
+                }
+                a {
+                    margin-left: 18%; //background-color: rgba(0, 0, 0, 0.01);
+                }
+            }
+        }
+    }
+}
+
+.top-bar {
+    position: absolute;
+    top: 0rem;
+    left: 16rem;
+    height: 4rem;
+    width: calc(100% - 16rem);
+    background-color: #000000;
     input {
         position: fixed;
         top: 0.92rem;
@@ -107,42 +129,38 @@ body {
     }
 }
 
-.boxes {
-    position: relative;
-    .first-box {
-        position: absolute;
-        top: 5rem;
-        left: 16%;
-        height: 45rem;
-        width: 30%;
+$con-marg: 0.5rem;
+.content-area {
+    position: absolute;
+    top: 4rem;
+    left: 16rem;
+    height: calc(100% - 4rem);
+    width: calc(100% - 16rem);
+    padding: 2rem - $con-marg;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .box {
+        float: left;
+        position: relative;
+        margin: $con-marg;
+        border-radius: 0.2rem;
         background-color: #191c20;
-        border-radius: 0.75%;
     }
-
+    .first-box {
+        //this width will become a percentage
+        height: 40rem;
+        width: 32rem;
+    }
     .second-box {
-        position: absolute;
-        top: 5rem;
-        left: 47%;
-        height: 22.5rem;
-        width: 50%;
-        background-color: #191c20;
-        border-radius: 0.75%;
+        height: 40rem;
+        width: calc(100% - (32rem + 4 * #{$con-marg}));
+        min-width: 32rem;
     }
     .third-box {
-        position: absolute;
-        top: 28rem;
-        left: 47%;
         height: 22rem;
         width: 50%;
-        background-color: #191c20;
-        border-radius: 0.75%;
     }
     .servers {
-        position: absolute;
-        //top:
+        position: absolute; //top:
     }
 }
-
-
-
-

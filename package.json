@@ -5,11 +5,12 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --include-path scss scss/main.scss css/main.css"
+        "build-css": "node-sass --include-path scss ./scss/main.scss ./css/main.css"
     },
     "author": "Jack Giannini",
     "license": "MIT",
     "devDependencies": {
+        "node-sass": "^4.11.0",
         "npm-sass": "^2.3.0",
         "sass": "^1.17.2"
     },
