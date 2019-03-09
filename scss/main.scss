@@ -39,21 +39,29 @@ body {
     top: 0rem;
     left: 0rem;
     height: 100%;
-    width: 16rem;
+    width: 18rem;
     background-color: #191c20;
-    .side-nav-part {
+    .side-nav-header {
         position: relative;
         height: 4rem;
-        width: 15%;
-        background-color: #191c20;
-        border-bottom: 0.05rem solid #0A0A0A;
-        h1 {
-            padding-top: 1rem;
-            font-size: 1.3rem;
-            text-align: center;
-            vertical-align: middle;
-            color: lightgreen;
-            background-color: #191c20;
+        width: 100%;
+        padding: 1.35rem 0;
+        line-height: 1;
+        font-size: 1.3rem;
+        text-align: center;
+        color: lightgreen;
+    }
+    .login-info {
+        position: relative;
+        height: 10rem;
+        width: 100%;
+        padding: 3.75rem 2rem;
+        .login-icon {
+            position: relative;
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            background-color: blue;
         }
     }
     .nav {
@@ -94,9 +102,9 @@ body {
 .top-bar {
     position: absolute;
     top: 0rem;
-    left: 16rem;
+    left: 18rem;
     height: 4rem;
-    width: calc(100% - 16rem);
+    width: calc(100% - 18rem);
     background-color: #000000;
     input {
         position: fixed;
@@ -133,9 +141,9 @@ $con-marg: 0.5rem;
 .content-area {
     position: absolute;
     top: 4rem;
-    left: 16rem;
+    left: 18rem;
     height: calc(100% - 4rem);
-    width: calc(100% - 16rem);
+    width: calc(100% - 18rem);
     padding: 2rem - $con-marg;
     overflow-x: hidden;
     overflow-y: auto;
