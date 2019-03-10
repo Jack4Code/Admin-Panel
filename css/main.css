@@ -43,18 +43,26 @@ body {
     line-height: 1;
     font-size: 1.3rem;
     text-align: center;
-    color: lightgreen; }
+    color: #C0C0C0; }
   .side-nav .login-info {
     position: relative;
+    float: left;
     height: 10rem;
     width: 100%;
-    padding: 3.75rem 0; }
+    padding: 3.75rem 2rem; }
     .side-nav .login-info .login-icon {
       position: relative;
       height: 2.5rem;
       width: 2.5rem;
       border-radius: 50%;
-      background-color: blue; }
+      background-color: #C0C0C0; }
+      .side-nav .login-info .login-icon .icon-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+      .side-nav .login-info .login-icon .userName {
+        float: right;
+        color: white; }
   .side-nav .nav {
     position: relative;
     margin: 0rem;
@@ -91,11 +99,11 @@ body {
   width: calc(100% - 18rem);
   background-color: #000000; }
   .top-bar input {
-    position: fixed;
+    position: relative;
     top: 0.92rem;
-    left: 20%;
+    left: 7%;
     height: 2.2rem;
-    width: 50rem;
+    width: 50%;
     outline: none;
     border: none;
     border-radius: 0.25rem;
@@ -132,14 +140,18 @@ body {
     border-radius: 0.2rem;
     background-color: #191c20; }
   .content-area .first-box {
-    height: 40rem;
+    height: 34rem;
     width: 32rem; }
   .content-area .second-box {
-    height: 40rem;
+    height: 34rem;
     width: calc(100% - (32rem + 4 * 0.5rem));
     min-width: 32rem; }
   .content-area .third-box {
-    height: 22rem;
-    width: 50%; }
+    height: 19rem;
+    width: 32rem; }
+  .content-area .fourth-box {
+    height: 19rem;
+    width: calc(100% - (32rem + 4 * 0.5rem));
+    min-width: 32rem; }
   .content-area .servers {
     position: absolute; }
